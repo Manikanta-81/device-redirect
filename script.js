@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = appStoreUrl;
 
     } else {
-        document.getElementById("messagae").innerText = "Device not recognized. So Please visit the store manually.";
+        document.getElementById("messagae").innerText = "Your device is not supported for redirection.";
         console.log("")
 
-    }
+    }   
 }); 
 
