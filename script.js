@@ -12,15 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = playStoreUrl;
 
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-
         console.log("Redirecting to App Store...");
-
+        
         window.location.href = appStoreUrl;
-
     } else {
-        document.getElementById("messagae").innerText = "Your device is not supported for redirection.";
-        console.log("")
-
+        document.getElementById("message").innerText = "Your device is not supported for redirection.";
+        console.log("Device not recognized for redirection.");
     }   
-}); 
-
+});
